@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+    }
+    .score{
+      position: absolute;
+      color: white;
+      margin: 10px;
+      font-size: large;
+    }
+    .modal{
+      background-color: #ffff;
+      border-radius: 10%;
+      min-width: 250px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2% 7%;
+    }
+    .score-container{
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    button{
+      padding : 10px;
+      background-color: rgb(114, 103, 212);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+    }
+    h1{
+      padding: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class='score'>
+    <span>Score: </span> <span id="scoreNum">0</span>
+  </div>
+  <canvas></canvas>
+  <div class='modal'>
+    <div class='score-container'>
+      <h1 id='modal-score'>0</h1>
+      <p>points</p>
+      <div>
+        <button id="startGame">Start Game</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+  
+</body>
+</html>
